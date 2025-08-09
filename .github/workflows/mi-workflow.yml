@@ -1,0 +1,12 @@
+name: Ejemplo mínimo
+
+# Evento que activa el workflow
+on:
+  push:
+
+jobs:
+  imprimir-mensaje:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mensaje
+        run: echo "¡Hola desde GitHub Actions!"
